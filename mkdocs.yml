@@ -36,7 +36,7 @@ extra_javascript:
 # Theme
 theme:
   name: material
-  language: es
+  language: en
   logo: images/logo.bmp
   favicon: images/logo_python.svg
   features:
@@ -86,14 +86,21 @@ plugins:
 # TOC
 nav:
     - index.md
+    - Intro to Programming:
+        - kaggle/01. Intro to Programming/tutorial/01. arithmetic-and-variables.ipynb
+        - kaggle/01. Intro to Programming/tutorial/02. functions.ipynb
+        - kaggle/01. Intro to Programming/tutorial/03. data-types.ipynb
+        - kaggle/01. Intro to Programming/tutorial/04. conditions-and-conditional-statements.ipynb
+        - kaggle/01. Intro to Programming/tutorial/05. intro-to-lists.ipynb
     - Python:
-        - kaggle/python/hello-python.ipynb
-        - kaggle/python/functions-and-getting-help.ipynb
-        - kaggle/python/booleans-and-conditionals.ipynb
-        - kaggle/python/lists.ipynb
-        - kaggle/python/loops-and-list-comprehensions.ipynb
-        - kaggle/python/strings-and-dictionaries.ipynb
-        - kaggle/python/working-with-external-libraries.ipynb
+        - kaggle/02. Python/tutorial/01. hello-python.ipynb
+        - kaggle/02. Python/tutorial/02. functions-and-getting-help.ipynb
+        - kaggle/02. Python/tutorial/03. booleans-and-conditionals.ipynb
+        - kaggle/02. Python/tutorial/04. lists.ipynb
+        - kaggle/02. Python/tutorial/05. loops-and-list-comprehensions.ipynb
+        - kaggle/02. Python/tutorial/06. strings-and-dictionaries.ipynb
+        - Working with External Libraries: kaggle/02. Python/tutorial/07. working-with-external-libraries
+
 
 
 
