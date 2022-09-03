@@ -2,47 +2,132 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/fralfaro/kaggle-courses/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/fralfaro/kaggle-courses/__init__/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/booleans-and-conditionals/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/exercise/01.%20exercise-arithmetic-and-variables/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/functions-and-getting-help/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/exercise/02.%20exercise-functions/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/hello-python/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/exercise/03.%20exercise-data-types/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/lists/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/exercise/04.%20exercise-conditions-and-conditional-statements/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/loops-and-list-comprehensions/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/exercise/05.%20exercise-intro-to-lists/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/strings-and-dictionaries/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/01.%20arithmetic-and-variables/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/python/working-with-external-libraries/</loc>
-         <lastmod>2022-09-02</lastmod>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/02.%20functions/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/03.%20data-types/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/04.%20conditions-and-conditional-statements/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/05.%20intro-to-lists/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/01.%20exercise-syntax-variables-and-numbers/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/02.%20exercise-functions-and-getting-help/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/03.%20exercise-booleans-and-conditionals/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/04.%20exercise-lists/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/05.%20exercise-loops-and-list-comprehensions/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/06.%20exercise-strings-and-dictionaries/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/exercise/07.%20exercise-working-with-external-libraries/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/01.%20hello-python/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/02.%20functions-and-getting-help/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/03.%20booleans-and-conditionals/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/04.%20lists/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/05.%20loops-and-list-comprehensions/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/06.%20strings-and-dictionaries/</loc>
+         <lastmod>2022-09-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/07.%20working-with-external-libraries/</loc>
+         <lastmod>2022-09-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
