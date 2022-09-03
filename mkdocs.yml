@@ -101,6 +101,16 @@ nav:
         - kaggle/02. Python/tutorial/06. strings-and-dictionaries.ipynb
         - Working with External Libraries: kaggle/02. Python/tutorial/07. working-with-external-libraries
 
+    - Intro to Machine Learning:
+        - kaggle/03. Intro to Machine Learning/tutorial/01. how-models-work.ipynb
+        - kaggle/03. Intro to Machine Learning/tutorial/02. basic-data-exploration.ipynb
+        - kaggle/03. Intro to Machine Learning/tutorial/03. your-first-machine-learning-model.ipynb
+        - kaggle/03. Intro to Machine Learning/tutorial/04. model-validation.ipynb
+        - kaggle/03. Intro to Machine Learning/tutorial/05. underfitting-and-overfitting.ipynb
+        - kaggle/03. Intro to Machine Learning/tutorial/06. random-forests.ipynb
+        - kaggle/03. Intro to Machine Learning/tutorial/07. machine-learning-competitions.ipynb
+
+
 
 
 
