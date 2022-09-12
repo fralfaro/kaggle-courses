@@ -92,6 +92,7 @@ nav:
         - kaggle/01. Intro to Programming/tutorial/03. data-types.ipynb
         - kaggle/01. Intro to Programming/tutorial/04. conditions-and-conditional-statements.ipynb
         - kaggle/01. Intro to Programming/tutorial/05. intro-to-lists.ipynb
+
     - Python:
         - kaggle/02. Python/tutorial/01. hello-python.ipynb
         - kaggle/02. Python/tutorial/02. functions-and-getting-help.ipynb
@@ -101,6 +102,31 @@ nav:
         - kaggle/02. Python/tutorial/06. strings-and-dictionaries.ipynb
         - Working with External Libraries: kaggle/02. Python/tutorial/07. working-with-external-libraries
 
+    - Pandas:
+        - kaggle/04. Pandas/tutorial/01. creating-reading-and-writing.ipynb
+        - kaggle/04. Pandas/tutorial/02. indexing-selecting-assigning.ipynb
+        - kaggle/04. Pandas/tutorial/03. summary-functions-and-maps.ipynb
+        - kaggle/04. Pandas/tutorial/04. grouping-and-sorting.ipynb
+        - kaggle/04. Pandas/tutorial/05. data-types-and-missing-values.ipynb
+        - kaggle/04. Pandas/tutorial/06. renaming-and-combining.ipynb
+
+    - Data Visualization:
+        - kaggle/06. Data Visualization/tutorial/01. hello-seaborn.ipynb
+        - kaggle/06. Data Visualization/tutorial/02. line-charts.ipynb
+        - kaggle/06. Data Visualization/tutorial/03. bar-charts-and-heatmaps.ipynb
+        - kaggle/06. Data Visualization/tutorial/04. scatter-plots.ipynb
+        - kaggle/06. Data Visualization/tutorial/05. distributions.ipynb
+        - kaggle/06. Data Visualization/tutorial/06. choosing-plot-types-and-custom-styles.ipynb
+        - kaggle/06. Data Visualization/tutorial/07. final-project.ipynb
+        - kaggle/06. Data Visualization/tutorial/08. creating-your-own-notebooks.ipynb
+
+    - Data Cleaning:
+        - kaggle/12. Data Cleaning/tutorial/01. handling-missing-values.ipynb
+        - kaggle/12. Data Cleaning/tutorial/02. scaling-and-normalization.ipynb
+        - kaggle/12. Data Cleaning/tutorial/03. parsing-dates.ipynb
+        - kaggle/12. Data Cleaning/tutorial/04. character-encodings.ipynb
+        - kaggle/12. Data Cleaning/tutorial/05. inconsistent-data-entry.ipynb
+
     - Intro to Machine Learning:
         - kaggle/03. Intro to Machine Learning/tutorial/01. how-models-work.ipynb
         - kaggle/03. Intro to Machine Learning/tutorial/02. basic-data-exploration.ipynb
@@ -109,13 +135,59 @@ nav:
         - kaggle/03. Intro to Machine Learning/tutorial/05. underfitting-and-overfitting.ipynb
         - kaggle/03. Intro to Machine Learning/tutorial/06. random-forests.ipynb
         - kaggle/03. Intro to Machine Learning/tutorial/07. machine-learning-competitions.ipynb
-    - Pandas:
-        - kaggle/04. Pandas/tutorial/01. creating-reading-and-writing.ipynb
-        - kaggle/04. Pandas/tutorial/02. indexing-selecting-assigning.ipynb
-        - kaggle/04. Pandas/tutorial/03. summary-functions-and-maps.ipynb
-        - kaggle/04. Pandas/tutorial/04. grouping-and-sorting.ipynb
-        - kaggle/04. Pandas/tutorial/05. data-types-and-missing-values.ipynb
-        - kaggle/04. Pandas/tutorial/06. renaming-and-combining.ipynb
+
+    - Intermediate to Machine Learning:
+        - kaggle/05. Intermediate to Machine Learning/tutorial/01. introduction.ipynb
+        - kaggle/05. Intermediate to Machine Learning/tutorial/02. missing-values.ipynb
+        - kaggle/05. Intermediate to Machine Learning/tutorial/03. categorical-variables.ipynb
+        - kaggle/05. Intermediate to Machine Learning/tutorial/04. pipelines.ipynb
+        - kaggle/05. Intermediate to Machine Learning/tutorial/05. cross-validation.ipynb
+        - kaggle/05. Intermediate to Machine Learning/tutorial/06. xgboost.ipynb
+        - kaggle/05. Intermediate to Machine Learning/tutorial/07. data-leakage.ipynb
+
+    - Feature Engineering:
+        - kaggle/07. Feature Engineering/tutorial/01. what-is-feature-engineering.ipynb
+        - kaggle/07. Feature Engineering/tutorial/02. mutual-information.ipynb
+        - kaggle/07. Feature Engineering/tutorial/03. creating-features.ipynb
+        - kaggle/07. Feature Engineering/tutorial/04. clustering-with-k-means.ipynb
+        - kaggle/07. Feature Engineering/tutorial/05. principal-component-analysis.ipynb
+        - kaggle/07. Feature Engineering/tutorial/06. target-encoding.ipynb
+        - kaggle/07. Feature Engineering/tutorial/07. feature-engineering-for-house-prices.ipynb
+
+    - Time Series:
+        - kaggle/13. Time Series/tutorial/01. linear-regression-with-time-series.ipynb
+        - kaggle/13. Time Series/tutorial/02. trend.ipynb
+        - kaggle/13. Time Series/tutorial/03. seasonality.ipynb
+        - kaggle/13. Time Series/tutorial/04. time-series-as-features.ipynb
+        - kaggle/13. Time Series/tutorial/05. hybrid-models.ipynb
+        - kaggle/13. Time Series/tutorial/06. forecasting-with-machine-learning.ipynb
+
+    - Intro to Deep Learning:
+        - kaggle/10. Intro to Deep Learning/tutorial/01. a-single-neuron.ipynb
+        - kaggle/10. Intro to Deep Learning/tutorial/02. deep-neural-networks.ipynb
+        - kaggle/10. Intro to Deep Learning/tutorial/03. stochastic-gradient-descent.ipynb
+        - kaggle/10. Intro to Deep Learning/tutorial/04. overfitting-and-underfitting.ipynb
+        - kaggle/10. Intro to Deep Learning/tutorial/05. dropout-and-batch-normalization.ipynb
+        - kaggle/10. Intro to Deep Learning/tutorial/06. binary-classification.ipynb
+
+    - SQL:
+        - kaggle/08. SQL/tutorial/01. getting-started-with-sql-and-bigquery.ipynb
+        - kaggle/08. SQL/tutorial/02. select-from-where.ipynb
+        - kaggle/08. SQL/tutorial/03. group-by-having-count.ipynb
+        - kaggle/08. SQL/tutorial/04. order-by.ipynb
+        - kaggle/08. SQL/tutorial/05. as-with.ipynb
+        - kaggle/08. SQL/tutorial/06. joining-data.ipynb
+
+    - Advanced SQL:
+        - kaggle/09. Advanced SQL/tutorial/01. joins-and-unions.ipynb
+        - kaggle/09. Advanced SQL/tutorial/02. analytic-functions.ipynb
+        - kaggle/09. Advanced SQL/tutorial/03. nested-and-repeated-data.ipynb
+        - kaggle/09. Advanced SQL/tutorial/04. writing-efficient-queries.ipynb
+
+
+
+
+
 
 
 
