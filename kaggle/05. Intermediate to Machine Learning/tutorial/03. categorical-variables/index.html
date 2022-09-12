@@ -17,7 +17,7 @@
     
     
       
-        <title>Introduction - Kaggle Courses</title>
+        <title>Categorical Variables - Kaggle Courses</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#categorical-variables" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Categorical Variables
             
           </span>
         </div>
@@ -744,6 +744,111 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-approaches" class="md-nav__link">
+    Three Approaches
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-drop-categorical-variables" class="md-nav__link">
+    1) Drop Categorical Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ordinal-encoding" class="md-nav__link">
+    2) Ordinal Encoding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-one-hot-encoding" class="md-nav__link">
+    3) One-Hot Encoding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-function-to-measure-quality-of-each-approach" class="md-nav__link">
+    Define Function to Measure Quality of Each Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#score-from-approach-1-drop-categorical-variables" class="md-nav__link">
+    Score from Approach 1 (Drop Categorical Variables)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#score-from-approach-2-ordinal-encoding" class="md-nav__link">
+    Score from Approach 2 (Ordinal Encoding)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#score-from-approach-3-one-hot-encoding" class="md-nav__link">
+    Score from Approach 3 (One-Hot Encoding)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-approach-is-best" class="md-nav__link">
+    Which approach is best?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-turn" class="md-nav__link">
+    Your Turn
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1793,14 +1898,14 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this tutorial, you will learn what a <strong>categorical variable</strong> is, along with three approaches for handling this type of data.</p>
-<h1 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h1><p>A <strong>categorical variable</strong> takes only a limited number of values.</p>
+<h1 id="categorical-variables">Categorical Variables<a class="anchor-link" href="#categorical-variables">&#182;</a></h1><p>In this tutorial, you will learn what a <strong>categorical variable</strong> is, along with three approaches for handling this type of data.</p>
+<h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>A <strong>categorical variable</strong> takes only a limited number of values.</p>
 <ul>
 <li>Consider a survey that asks how often you eat breakfast and provides four options: "Never", "Rarely", "Most days", or "Every day".  In this case, the data is categorical, because responses fall into a fixed set of categories.</li>
 <li>If people responded to a survey about which what brand of car they owned, the responses would fall into categories like "Honda", "Toyota", and "Ford".  In this case, the data is also categorical.</li>
 </ul>
 <p>You will get an error if you try to plug these variables into most machine learning models in Python without preprocessing them first.  In this tutorial, we'll compare three approaches that you can use to prepare your categorical data.</p>
-<h1 id="three-approaches">Three Approaches<a class="anchor-link" href="#three-approaches">&#182;</a></h1><h3 id="1-drop-categorical-variables">1) Drop Categorical Variables<a class="anchor-link" href="#1-drop-categorical-variables">&#182;</a></h3><p>The easiest approach to dealing with categorical variables is to simply remove them from the dataset.  This approach will only work well if the columns did not contain useful information.</p>
+<h2 id="three-approaches">Three Approaches<a class="anchor-link" href="#three-approaches">&#182;</a></h2><h3 id="1-drop-categorical-variables">1) Drop Categorical Variables<a class="anchor-link" href="#1-drop-categorical-variables">&#182;</a></h3><p>The easiest approach to dealing with categorical variables is to simply remove them from the dataset.  This approach will only work well if the columns did not contain useful information.</p>
 <h3 id="2-ordinal-encoding">2) Ordinal Encoding<a class="anchor-link" href="#2-ordinal-encoding">&#182;</a></h3><p><strong>Ordinal encoding</strong> assigns each unique value to a different integer.</p>
 <p><img src="https://i.imgur.com/tEogUAr.png" alt="tut3_ordinalencode"></p>
 <p>This approach assumes an ordering of the categories: "Never" (0) &lt; "Rarely" (1) &lt; "Most days" (2) &lt; "Every day" (3).</p>
@@ -1810,7 +1915,7 @@ Licensed under the Apache License, Version 2.0.
 <p>In the original dataset, "Color" is a categorical variable with three categories: "Red", "Yellow", and "Green".  The corresponding one-hot encoding contains one column for each possible value, and one row for each row in the original dataset.  Wherever the original value was "Red", we put a 1 in the "Red" column; if the original value was "Yellow", we put a 1 in the "Yellow" column, and so on.</p>
 <p>In contrast to ordinal encoding, one-hot encoding <em>does not</em> assume an ordering of the categories.  Thus, you can expect this approach to work particularly well if there is no clear ordering in the categorical data (e.g., "Red" is neither <em>more</em> nor <em>less</em> than "Yellow").  We refer to categorical variables without an intrinsic ranking as <strong>nominal variables</strong>.</p>
 <p>One-hot encoding generally does not perform well if the categorical variable takes on a large number of values (i.e., you generally won't use it for variables taking more than 15 different values).</p>
-<h1 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h1><p>As in the previous tutorial, we will work with the <a href="https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home">Melbourne Housing dataset</a>.</p>
+<h3 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h3><p>As in the previous tutorial, we will work with the <a href="https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home">Melbourne Housing dataset</a>.</p>
 <p>We won't focus on the data loading step. Instead, you can imagine you are at a point where you already have the training and validation data in <code>X_train</code>, <code>X_valid</code>, <code>y_train</code>, and <code>y_valid</code>.</p>
 
 </div>
@@ -2543,10 +2648,10 @@ print(score_dataset(OH_X_train, OH_X_valid, y_train, y_valid))</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="which-approach-is-best">Which approach is best?<a class="anchor-link" href="#which-approach-is-best">&#182;</a></h1><p>In this case, dropping the categorical columns (<strong>Approach 1</strong>) performed worst, since it had the highest MAE score.  As for the other two approaches, since the returned MAE scores are so close in value, there doesn't appear to be any meaningful benefit to one over the other.</p>
+<h2 id="which-approach-is-best">Which approach is best?<a class="anchor-link" href="#which-approach-is-best">&#182;</a></h2><p>In this case, dropping the categorical columns (<strong>Approach 1</strong>) performed worst, since it had the highest MAE score.  As for the other two approaches, since the returned MAE scores are so close in value, there doesn't appear to be any meaningful benefit to one over the other.</p>
 <p>In general, one-hot encoding (<strong>Approach 3</strong>) will typically perform best, and dropping the categorical columns (<strong>Approach 1</strong>) typically performs worst, but it varies on a case-by-case basis.</p>
-<h1 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h1><p>The world is filled with categorical data. You will be a much more effective data scientist if you know how to use this common data type!</p>
-<h1 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h1><p>Put your new skills to work in the <strong><a href="https://www.kaggle.com/kernels/fork/3370279">next exercise</a></strong>!</p>
+<h2 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h2><p>The world is filled with categorical data. You will be a much more effective data scientist if you know how to use this common data type!</p>
+<h2 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h2><p>Put your new skills to work in the <strong><a href="https://www.kaggle.com/kernels/fork/3370279">next exercise</a></strong>!</p>
 
 </div>
 </div>

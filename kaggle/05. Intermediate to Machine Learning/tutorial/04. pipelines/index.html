@@ -17,7 +17,7 @@
     
     
       
-        <title>Introduction - Kaggle Courses</title>
+        <title>Pipelines - Kaggle Courses</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#pipelines" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Pipelines
             
           </span>
         </div>
@@ -744,6 +744,69 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-preprocessing-steps" class="md-nav__link">
+    Step 1: Define Preprocessing Steps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-define-the-model" class="md-nav__link">
+    Step 2: Define the Model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-and-evaluate-the-pipeline" class="md-nav__link">
+    Step 3: Create and Evaluate the Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-turn" class="md-nav__link">
+    Your Turn
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1793,8 +1856,8 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this tutorial, you will learn how to use <strong>pipelines</strong> to clean up your modeling code.</p>
-<h1 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h1><p><strong>Pipelines</strong> are a simple way to keep your data preprocessing and modeling code organized.  Specifically, a pipeline bundles preprocessing and modeling steps so you can use the whole bundle as if it were a single step.</p>
+<h1 id="pipelines">Pipelines<a class="anchor-link" href="#pipelines">&#182;</a></h1><p>In this tutorial, you will learn how to use <strong>pipelines</strong> to clean up your modeling code.</p>
+<h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p><strong>Pipelines</strong> are a simple way to keep your data preprocessing and modeling code organized.  Specifically, a pipeline bundles preprocessing and modeling steps so you can use the whole bundle as if it were a single step.</p>
 <p>Many data scientists hack together models without pipelines, but pipelines have some important benefits. Those include:</p>
 <ol>
 <li><strong>Cleaner Code:</strong> Accounting for data at each step of preprocessing can get messy.  With a pipeline, you won't need to manually keep track of your training and validation data at each step.</li>
@@ -1802,7 +1865,7 @@ Licensed under the Apache License, Version 2.0.
 <li><strong>Easier to Productionize:</strong> It can be surprisingly hard to transition a model from a prototype to something deployable at scale.  We won't go into the many related concerns here, but pipelines can help.</li>
 <li><strong>More Options for Model Validation:</strong> You will see an example in the next tutorial, which covers cross-validation.</li>
 </ol>
-<h1 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h1><p>As in the previous tutorial, we will work with the <a href="https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home">Melbourne Housing dataset</a>.</p>
+<h3 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h3><p>As in the previous tutorial, we will work with the <a href="https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home">Melbourne Housing dataset</a>.</p>
 <p>We won't focus on the data loading step. Instead, you can imagine you are at a point where you already have the training and validation data in <code>X_train</code>, <code>X_valid</code>, <code>y_train</code>, and <code>y_valid</code>.</p>
 
 </div>
@@ -2330,8 +2393,8 @@ print('MAE:', score)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h1><p>Pipelines are valuable for cleaning up machine learning code and avoiding errors, and are especially useful for workflows with sophisticated data preprocessing.</p>
-<h1 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h1><p>Use a pipeline in the <a href="https://www.kaggle.com/kernels/fork/3370278"><strong>next exercise</strong></a> to use advanced data preprocessing techniques and improve your predictions!</p>
+<h2 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h2><p>Pipelines are valuable for cleaning up machine learning code and avoiding errors, and are especially useful for workflows with sophisticated data preprocessing.</p>
+<h2 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h2><p>Use a pipeline in the <a href="https://www.kaggle.com/kernels/fork/3370278"><strong>next exercise</strong></a> to use advanced data preprocessing techniques and improve your predictions!</p>
 
 </div>
 </div>

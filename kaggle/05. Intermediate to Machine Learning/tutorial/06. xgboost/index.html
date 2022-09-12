@@ -17,7 +17,7 @@
     
     
       
-        <title>Introduction - Kaggle Courses</title>
+        <title>XGBoost - Kaggle Courses</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#xgboost" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              XGBoost
             
           </span>
         </div>
@@ -744,6 +744,90 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-boosting" class="md-nav__link">
+    Gradient Boosting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-tuning" class="md-nav__link">
+    Parameter Tuning
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameter Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n_estimators" class="md-nav__link">
+    n_estimators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#early_stopping_rounds" class="md-nav__link">
+    early_stopping_rounds
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning_rate" class="md-nav__link">
+    learning_rate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n_jobs" class="md-nav__link">
+    n_jobs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-turn" class="md-nav__link">
+    Your Turn
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1793,11 +1877,11 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this tutorial, you will learn how to build and optimize models with <strong>gradient boosting</strong>.  This method dominates many Kaggle competitions and achieves state-of-the-art results on a variety of datasets.</p>
-<h1 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h1><p>For much of this course, you have made predictions with the random forest method, which achieves better performance than a single decision tree simply by averaging the predictions of many decision trees.</p>
+<h1 id="xgboost">XGBoost<a class="anchor-link" href="#xgboost">&#182;</a></h1><p>In this tutorial, you will learn how to build and optimize models with <strong>gradient boosting</strong>.  This method dominates many Kaggle competitions and achieves state-of-the-art results on a variety of datasets.</p>
+<h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>For much of this course, you have made predictions with the random forest method, which achieves better performance than a single decision tree simply by averaging the predictions of many decision trees.</p>
 <p>We refer to the random forest method as an "ensemble method".  By definition, <strong>ensemble methods</strong> combine the predictions of several models (e.g., several trees, in the case of random forests).</p>
 <p>Next, we'll learn about another ensemble method called gradient boosting.</p>
-<h1 id="gradient-boosting">Gradient Boosting<a class="anchor-link" href="#gradient-boosting">&#182;</a></h1><p><strong>Gradient boosting</strong> is a method that goes through cycles to iteratively add models into an ensemble.</p>
+<h2 id="gradient-boosting">Gradient Boosting<a class="anchor-link" href="#gradient-boosting">&#182;</a></h2><p><strong>Gradient boosting</strong> is a method that goes through cycles to iteratively add models into an ensemble.</p>
 <p>It begins by initializing the ensemble with a single model, whose predictions can be pretty naive.  (Even if its predictions are wildly inaccurate, subsequent additions to the ensemble will address those errors.)</p>
 <p>Then, we start the cycle:</p>
 <ul>
@@ -1808,7 +1892,7 @@ Licensed under the Apache License, Version 2.0.
 <li>... repeat!</li>
 </ul>
 <p><img src="https://i.imgur.com/MvCGENh.png" alt="tut6_boosting"></p>
-<h1 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h1><p>We begin by loading the training and validation data in <code>X_train</code>, <code>X_valid</code>, <code>y_train</code>, and <code>y_valid</code>.</p>
+<h2 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h2><p>We begin by loading the training and validation data in <code>X_train</code>, <code>X_valid</code>, <code>y_train</code>, and <code>y_valid</code>.</p>
 
 </div>
 </div>
@@ -2038,7 +2122,7 @@ print("Mean Absolute Error: " + str(mean_absolute_error(predictions, y_valid)))<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="parameter-tuning">Parameter Tuning<a class="anchor-link" href="#parameter-tuning">&#182;</a></h1><p>XGBoost has a few parameters that can dramatically affect accuracy and training speed.  The first parameters you should understand are:</p>
+<h2 id="parameter-tuning">Parameter Tuning<a class="anchor-link" href="#parameter-tuning">&#182;</a></h2><p>XGBoost has a few parameters that can dramatically affect accuracy and training speed.  The first parameters you should understand are:</p>
 <h3 id="n_estimators"><code>n_estimators</code><a class="anchor-link" href="#n_estimators">&#182;</a></h3><p><code>n_estimators</code> specifies how many times to go through the modeling cycle described above.  It is equal to the number of models that we include in the ensemble.</p>
 <ul>
 <li>Too <em>low</em> a value causes <em>underfitting</em>, which leads to inaccurate predictions on both training data and test data. </li>
@@ -2392,8 +2476,8 @@ my_model.fit(X_train, y_train,
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h1><p><a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a> is a leading software library for working with standard tabular data (the type of data you store in Pandas DataFrames, as opposed to more exotic types of data like images and videos).  With careful parameter tuning, you can train highly accurate models.</p>
-<h1 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h1><p>Train your own model with XGBoost in the <strong><a href="https://www.kaggle.com/kernels/fork/3370271">next exercise</a></strong>!</p>
+<h2 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h2><p><a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a> is a leading software library for working with standard tabular data (the type of data you store in Pandas DataFrames, as opposed to more exotic types of data like images and videos).  With careful parameter tuning, you can train highly accurate models.</p>
+<h2 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h2><p>Train your own model with XGBoost in the <strong><a href="https://www.kaggle.com/kernels/fork/3370271">next exercise</a></strong>!</p>
 
 </div>
 </div>

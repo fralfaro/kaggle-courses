@@ -17,7 +17,7 @@
     
     
       
-        <title>Welcome to Feature Engineering! - Kaggle Courses</title>
+        <title>What Is Feature Engineering - Kaggle Courses</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-feature-engineering" class="md-skip">
+        <a href="#what-is-feature-engineering" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Feature Engineering!
+              What Is Feature Engineering
             
           </span>
         </div>
@@ -744,6 +744,49 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-feature-engineering" class="md-nav__link">
+    Welcome to Feature Engineering!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-goal-of-feature-engineering" class="md-nav__link">
+    The Goal of Feature Engineering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-guiding-principle-of-feature-engineering" class="md-nav__link">
+    A Guiding Principle of Feature Engineering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-concrete-formulations" class="md-nav__link">
+    Example - Concrete Formulations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    Continue
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1793,7 +1836,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="welcome-to-feature-engineering">Welcome to Feature Engineering!<a class="anchor-link" href="#welcome-to-feature-engineering">&#182;</a></h1><p>In this course you'll learn about one of the most important steps on the way to building a great machine learning model: <em>feature engineering</em>. You'll learn how to:</p>
+<h1 id="what-is-feature-engineering">What Is Feature Engineering<a class="anchor-link" href="#what-is-feature-engineering">&#182;</a></h1><h2 id="welcome-to-feature-engineering">Welcome to Feature Engineering!<a class="anchor-link" href="#welcome-to-feature-engineering">&#182;</a></h2><p>In this course you'll learn about one of the most important steps on the way to building a great machine learning model: <em>feature engineering</em>. You'll learn how to:</p>
 <ul>
 <li>determine which features are the most important with <em>mutual information</em></li>
 <li>invent new features in several real-world problem domains</li>
@@ -1814,7 +1857,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="the-goal-of-feature-engineering">The Goal of Feature Engineering<a class="anchor-link" href="#the-goal-of-feature-engineering">&#182;</a></h1><p>The goal of feature engineering is simply to make your data better suited to the problem at hand.</p>
+<h2 id="the-goal-of-feature-engineering">The Goal of Feature Engineering<a class="anchor-link" href="#the-goal-of-feature-engineering">&#182;</a></h2><p>The goal of feature engineering is simply to make your data better suited to the problem at hand.</p>
 <p>Consider "apparent temperature" measures like the heat index and the wind chill. These quantities attempt to measure the <em>perceived</em> temperature to humans based on air temperature, humidity, and wind speed, things which we can measure directly. You could think of an apparent temperature as the result of a kind of feature engineering, an attempt to make the observed data more relevant to what we actually care about: how it actually feels outside!</p>
 <p>You might perform feature engineering to:</p>
 <ul>
@@ -1822,7 +1865,7 @@ Licensed under the Apache License, Version 2.0.
 <li>reduce computational or data needs</li>
 <li>improve interpretability of the results</li>
 </ul>
-<h1 id="a-guiding-principle-of-feature-engineering">A Guiding Principle of Feature Engineering<a class="anchor-link" href="#a-guiding-principle-of-feature-engineering">&#182;</a></h1><p>For a feature to be useful, it must have a relationship to the target that your model is able to learn. Linear models, for instance, are only able to learn linear relationships. So, when using a linear model, your goal is to transform the features to make their relationship to the target linear.</p>
+<h2 id="a-guiding-principle-of-feature-engineering">A Guiding Principle of Feature Engineering<a class="anchor-link" href="#a-guiding-principle-of-feature-engineering">&#182;</a></h2><p>For a feature to be useful, it must have a relationship to the target that your model is able to learn. Linear models, for instance, are only able to learn linear relationships. So, when using a linear model, your goal is to transform the features to make their relationship to the target linear.</p>
 <p>The key idea here is that a transformation you apply to a feature becomes in essence a part of the model itself. Say you were trying to predict the <code>Price</code> of square plots of land from the <code>Length</code> of one side. Fitting a linear model directly to <code>Length</code> gives poor results: the relationship is not linear.</p>
 <figure style="padding: 1em;">
 <img src="https://i.imgur.com/5D1z24N.png" width=300, alt="A scatterplot of Length along the x-axis and Price along the y-axis, the points increasing in a curve, with a poorly-fitting line superimposed.">
@@ -1845,7 +1888,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="example-concrete-formulations">Example - Concrete Formulations<a class="anchor-link" href="#example-concrete-formulations">&#182;</a></h1><p>To illustrate these ideas we'll see how adding a few synthetic features to a dataset can improve the predictive performance of a random forest model.</p>
+<h2 id="example-concrete-formulations">Example - Concrete Formulations<a class="anchor-link" href="#example-concrete-formulations">&#182;</a></h2><p>To illustrate these ideas we'll see how adding a few synthetic features to a dataset can improve the predictive performance of a random forest model.</p>
 <p>The <a href="https://www.kaggle.com/sinamhd9/concrete-comprehensive-strength"><em>Concrete</em></a> dataset contains a variety of concrete formulations and the resulting product's <em>compressive strength</em>, which is a measure of how much load that kind of concrete can bear. The task for this dataset is to predict a concrete's compressive strength given its formulation.</p>
 
 </div>
@@ -2204,7 +2247,7 @@ print(f"MAE Score with Ratio Features: {score:.4}")</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>And sure enough, performance improved! This is evidence that these new ratio features exposed important information to the model that it wasn't detecting before.</p>
-<h1 id="continue">Continue<a class="anchor-link" href="#continue">&#182;</a></h1><p>We've seen that engineering new features can improve model performance.  But how do you identify features in the dataset that might be useful to combine?  <a href="https://www.kaggle.com/ryanholbrook/mutual-information"><strong>Discover useful features</strong></a> with mutual information.</p>
+<h2 id="continue">Continue<a class="anchor-link" href="#continue">&#182;</a></h2><p>We've seen that engineering new features can improve model performance.  But how do you identify features in the dataset that might be useful to combine?  <a href="https://www.kaggle.com/ryanholbrook/mutual-information"><strong>Discover useful features</strong></a> with mutual information.</p>
 
 </div>
 </div>

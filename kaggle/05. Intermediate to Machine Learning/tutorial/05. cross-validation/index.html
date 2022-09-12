@@ -17,7 +17,7 @@
     
     
       
-        <title>Introduction - Kaggle Courses</title>
+        <title>Cross-Validation - Kaggle Courses</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#cross-validation" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Cross-Validation
             
           </span>
         </div>
@@ -744,6 +744,28 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cross-validation" class="md-nav__link">
+    What is cross-validation?
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1793,8 +1815,8 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this tutorial, you will learn how to use <strong>cross-validation</strong> for better measures of model performance.</p>
-<h1 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h1><p>Machine learning is an iterative process.</p>
+<h1 id="cross-validation">Cross-Validation<a class="anchor-link" href="#cross-validation">&#182;</a></h1><p>In this tutorial, you will learn how to use <strong>cross-validation</strong> for better measures of model performance.</p>
+<h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>Machine learning is an iterative process.</p>
 <p>You will face choices about what predictive variables to use, what types of models to use, what arguments to supply to those models, etc. So far, you have made these choices in a data-driven way by measuring model quality with a validation (or holdout) set.</p>
 <p>But there are some drawbacks to this approach.  To see this, imagine you have a dataset with 5000 rows.  You will typically keep about 20% of the data as a validation dataset, or 1000 rows.  But this leaves some random chance in determining model scores.  That is, a model might do well on one set of 1000 rows, even if it would be inaccurate on a different 1000 rows.</p>
 <p>At an extreme, you could imagine having only 1 row of data in the validation set. If you compare alternative models, which one makes the best predictions on a single data point will be mostly a matter of luck!</p>
@@ -1810,7 +1832,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="what-is-cross-validation">What is cross-validation?<a class="anchor-link" href="#what-is-cross-validation">&#182;</a></h1><p>In <strong>cross-validation</strong>, we run our modeling process on different subsets of the data to get multiple measures of model quality.</p>
+<h2 id="what-is-cross-validation">What is cross-validation?<a class="anchor-link" href="#what-is-cross-validation">&#182;</a></h2><p>In <strong>cross-validation</strong>, we run our modeling process on different subsets of the data to get multiple measures of model quality.</p>
 <p>For example, we could begin by dividing the data into 5 pieces, each 20% of the full dataset.  In this case, we say that we have broken the data into 5 "<strong>folds</strong>".</p>
 <p><img src="https://i.imgur.com/9k60cVA.png" alt="tut5_crossval"></p>
 <p>Then, we run one experiment for each fold:</p>
@@ -1838,7 +1860,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h1><p>We'll work with the same data as in the previous tutorial.  We load the input data in <code>X</code> and the output data in <code>y</code>.</p>
+<h2 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h2><p>We'll work with the same data as in the previous tutorial.  We load the input data in <code>X</code> and the output data in <code>y</code>.</p>
 
 </div>
 </div>
@@ -2117,8 +2139,8 @@ print(scores.mean())</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h1><p>Using cross-validation yields a much better measure of model quality, with the added benefit of cleaning up our code: note that we no longer need to keep track of separate training and validation sets.  So, especially for small datasets, it's a good improvement!</p>
-<h1 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h1><p>Put your new skills to work in the <strong><a href="https://www.kaggle.com/kernels/fork/3370281">next exercise</a></strong>!</p>
+<h2 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h2><p>Using cross-validation yields a much better measure of model quality, with the added benefit of cleaning up our code: note that we no longer need to keep track of separate training and validation sets.  So, especially for small datasets, it's a good improvement!</p>
+<h2 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h2><p>Put your new skills to work in the <strong><a href="https://www.kaggle.com/kernels/fork/3370281">next exercise</a></strong>!</p>
 
 </div>
 </div>

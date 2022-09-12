@@ -17,7 +17,7 @@
     
     
       
-        <title>Introduction - Kaggle Courses</title>
+        <title>Missing Values - Kaggle Courses</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#missing-values" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Missing Values
             
           </span>
         </div>
@@ -744,6 +744,111 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-approaches" class="md-nav__link">
+    Three Approaches
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Approaches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-a-simple-option-drop-columns-with-missing-values" class="md-nav__link">
+    1) A Simple Option: Drop Columns with Missing Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-a-better-option-imputation" class="md-nav__link">
+    2) A Better Option: Imputation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-an-extension-to-imputation" class="md-nav__link">
+    3) An Extension To Imputation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-function-to-measure-quality-of-each-approach" class="md-nav__link">
+    Define Function to Measure Quality of Each Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#score-from-approach-1-drop-columns-with-missing-values" class="md-nav__link">
+    Score from Approach 1 (Drop Columns with Missing Values)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#score-from-approach-2-imputation" class="md-nav__link">
+    Score from Approach 2 (Imputation)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#score-from-approach-3-an-extension-to-imputation" class="md-nav__link">
+    Score from Approach 3 (An Extension to Imputation)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#so-why-did-imputation-perform-better-than-dropping-the-columns" class="md-nav__link">
+    So, why did imputation perform better than dropping the columns?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-turn" class="md-nav__link">
+    Your Turn
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1793,8 +1898,8 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In this tutorial, you will learn three approaches to <strong>dealing with missing values</strong>. Then you'll compare the effectiveness of these approaches on a real-world dataset.</p>
-<h1 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h1><p>There are many ways data can end up with missing values. For example,</p>
+<h1 id="missing-values">Missing Values<a class="anchor-link" href="#missing-values">&#182;</a></h1><p>In this tutorial, you will learn three approaches to <strong>dealing with missing values</strong>. Then you'll compare the effectiveness of these approaches on a real-world dataset.</p>
+<h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>There are many ways data can end up with missing values. For example,</p>
 <ul>
 <li>A 2 bedroom house won't include a value for the size of a third bedroom.</li>
 <li>A survey respondent may choose not to share his income.</li>
@@ -1811,7 +1916,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="three-approaches">Three Approaches<a class="anchor-link" href="#three-approaches">&#182;</a></h1><h3 id="1-a-simple-option-drop-columns-with-missing-values">1) A Simple Option: Drop Columns with Missing Values<a class="anchor-link" href="#1-a-simple-option-drop-columns-with-missing-values">&#182;</a></h3><p>The simplest option is to drop columns with missing values.</p>
+<h2 id="three-approaches">Three Approaches<a class="anchor-link" href="#three-approaches">&#182;</a></h2><h3 id="1-a-simple-option-drop-columns-with-missing-values">1) A Simple Option: Drop Columns with Missing Values<a class="anchor-link" href="#1-a-simple-option-drop-columns-with-missing-values">&#182;</a></h3><p>The simplest option is to drop columns with missing values.</p>
 <p><img src="https://i.imgur.com/Sax80za.png" alt="tut2_approach1"></p>
 <p>Unless most values in the dropped columns are missing, the model loses access to a lot of (potentially useful!) information with this approach.  As an extreme example, consider a dataset with 10,000 rows, where one important column is missing a single entry. This approach would drop the column entirely!</p>
 <h3 id="2-a-better-option-imputation">2) A Better Option: Imputation<a class="anchor-link" href="#2-a-better-option-imputation">&#182;</a></h3><p><strong>Imputation</strong> fills in the missing values with some number.  For instance, we can fill in the mean value along each column.</p>
@@ -1821,7 +1926,7 @@ Licensed under the Apache License, Version 2.0.
 <p><img src="https://i.imgur.com/UWOyg4a.png" alt="tut3_approach3"></p>
 <p>In this approach, we impute the missing values, as before.  And, additionally, for each column with missing entries in the original dataset, we add a new column that shows the location of the imputed entries.</p>
 <p>In some cases, this will meaningfully improve results. In other cases, it doesn't help at all.</p>
-<h1 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h1><p>In the example, we will work with the <a href="https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home">Melbourne Housing dataset</a>.  Our model will use information such as the number of rooms and land size to predict home price.</p>
+<h3 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h3><p>In the example, we will work with the <a href="https://www.kaggle.com/dansbecker/melbourne-housing-snapshot/home">Melbourne Housing dataset</a>.  Our model will use information such as the number of rooms and land size to predict home price.</p>
 <p>We won't focus on the data loading step. Instead, you can imagine you are at a point where you already have the training and validation data in <code>X_train</code>, <code>X_valid</code>, <code>y_train</code>, and <code>y_valid</code>.</p>
 
 </div>
@@ -2326,8 +2431,8 @@ dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h1><p>As is common, imputing missing values (in <strong>Approach 2</strong> and <strong>Approach 3</strong>) yielded better results, relative to when we simply dropped columns with missing values (in <strong>Approach 1</strong>).</p>
-<h1 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h1><p>Compare these approaches to dealing with missing values yourself in <strong><a href="https://www.kaggle.com/kernels/fork/3370280">this exercise</a></strong>!</p>
+<h2 id="conclusion">Conclusion<a class="anchor-link" href="#conclusion">&#182;</a></h2><p>As is common, imputing missing values (in <strong>Approach 2</strong> and <strong>Approach 3</strong>) yielded better results, relative to when we simply dropped columns with missing values (in <strong>Approach 1</strong>).</p>
+<h2 id="your-turn">Your Turn<a class="anchor-link" href="#your-turn">&#182;</a></h2><p>Compare these approaches to dealing with missing values yourself in <strong><a href="https://www.kaggle.com/kernels/fork/3370280">this exercise</a></strong>!</p>
 
 </div>
 </div>
