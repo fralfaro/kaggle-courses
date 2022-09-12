@@ -1,7 +1,7 @@
 # Kaggle Courses
 
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Kaggle_logo.png/640px-Kaggle_logo.png" alt="Girl in a jacket" width="300" height="150">
-](https://www.kaggle.com/learn)
+<img src="images/kaggle3.png" alt="img python" 
+     width="230" height="320"  align="right" >
 
 Gain the skills you need to do independent data science projects.
 

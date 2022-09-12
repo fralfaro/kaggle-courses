@@ -49,7 +49,7 @@ theme:
     # Light mode
     - media: '(prefers-color-scheme: light)'
       scheme: default
-      primary: blue grey
+      primary: black
       accent: light blue
       toggle:
         icon: material/toggle-switch-off-outline
@@ -58,7 +58,7 @@ theme:
     # Dark mode
     - media: '(prefers-color-scheme: dark)'
       scheme: slate
-      primary: blue grey
+      primary: black
       accent: light blue
       toggle:
         icon: material/toggle-switch
@@ -109,6 +109,14 @@ nav:
         - kaggle/03. Intro to Machine Learning/tutorial/05. underfitting-and-overfitting.ipynb
         - kaggle/03. Intro to Machine Learning/tutorial/06. random-forests.ipynb
         - kaggle/03. Intro to Machine Learning/tutorial/07. machine-learning-competitions.ipynb
+    - Pandas:
+        - kaggle/04. Pandas/tutorial/01. creating-reading-and-writing.ipynb
+        - kaggle/04. Pandas/tutorial/02. indexing-selecting-assigning.ipynb
+        - kaggle/04. Pandas/tutorial/03. summary-functions-and-maps.ipynb
+        - kaggle/04. Pandas/tutorial/04. grouping-and-sorting.ipynb
+        - kaggle/04. Pandas/tutorial/05. data-types-and-missing-values.ipynb
+        - kaggle/04. Pandas/tutorial/06. renaming-and-combining.ipynb
+
 
 
 
