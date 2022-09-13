@@ -2865,14 +2865,15 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/13.%20Time%20Series/tutorial/02.%20trend.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="trend">Trend<a class="anchor-link" href="#trend">&#182;</a></h1><h2 id="what-is-trend">What is Trend?<a class="anchor-link" href="#what-is-trend">&#182;</a></h2><p>The <strong>trend</strong> component of a time series represents a persistent, long-term change in the mean of the series. The trend is the slowest-moving part of a series, the part representing the largest time scale of importance. In a time series of product sales, an increasing trend might be the effect of a market expansion as more people become aware of the product year by year.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/ZdS4ZoJ.png" width=800, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/ZdS4ZoJ.png" width=800, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>Trend patterns in four time series.</center></figcaption>
 </figure><p>In this course, we'll focus on trends in the mean. More generally though, any persistent and slow-moving change in a series could constitute a trend -- time series commonly have trends in their variation for instance.</p>
 <h2 id="moving-average-plots">Moving Average Plots<a class="anchor-link" href="#moving-average-plots">&#182;</a></h2><p>To see what kind of trend a time series might have, we can use a <strong>moving average plot</strong>. To compute a moving average of a time series, we compute the average of the values within a sliding window of some defined width. Each point on the graph represents the average of all the values in the series that fall within the window on either side. The idea is to smooth out any short-term fluctuations in the series so that only long-term changes remain.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/EZOXiPs.gif" width=800, alt="An animated plot showing an undulating curve slowly increasing with a moving average line developing from left to right within a window of 12 points (in red).">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/EZOXiPs.gif" width=800, alt="An animated plot showing an undulating curve slowly increasing with a moving average line developing from left to right within a window of 12 points (in red).">
 <figcaption style="textalign: center; font-style: italic"><center>A moving average plot illustrating a linear trend. Each point on the curve (blue) is the average of the points (red) within a window of size 12.
 </center></figcaption>
 </figure><p>Notice how the <em>Mauna Loa</em> series above has a repeating up and down movement year after year -- a short-term, <em>seasonal</em> change. For a change to be a part of the trend, it should occur over a longer period than any seasonal changes. To visualize a trend, therefore, we take an average over a period longer than any seasonal period in the series. For the <em>Mauna Loa</em> series, we chose a window of size 12 to smooth over the season within each year.</p>
@@ -2896,7 +2897,7 @@ Licensed under the Apache License, Version 2.0.
 <p>Linear regression will learn the coefficients <code>a</code>, <code>b,</code> and <code>c</code>.</p>
 <p>The trend curves in the figure below were both fit using these kinds of features and scikit-learn's <code>LinearRegression</code>:</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/KFYlgGm.png" width=*00, alt="Above, Cars Sold in Quebec: an undulating plot gradually increasing from 1960-01 to 1968-12 with a linear trend-line superimposed. Below, Plastics Production in Australia: an undulating plot with a concave-up quadratic trend-line superimposed.">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/KFYlgGm.png" width=*00, alt="Above, Cars Sold in Quebec: an undulating plot gradually increasing from 1960-01 to 1968-12 with a linear trend-line superimposed. Below, Plastics Production in Australia: an undulating plot with a concave-up quadratic trend-line superimposed.">
 <figcaption style="textalign: center; font-style: italic"><center><strong>Top:</strong> Series with a linear trend. <strong>Below:</strong> Series with a quadratic trend.
 </center></figcaption>
 </figure><p>If you haven't seen the trick before, you may not have realized that linear regression can fit curves other than lines. The idea is that if you can provide curves of the appropriate shape as features, then linear regression can learn how to combine them in the way that best fits the target.</p>

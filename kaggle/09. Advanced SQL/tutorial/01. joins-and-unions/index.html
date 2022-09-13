@@ -2865,9 +2865,10 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/09.%20Advanced%20SQL/tutorial/01.%20joins-and-unions.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="joins-and-unions">JOINs and UNIONs<a class="anchor-link" href="#joins-and-unions">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>In the <a href="https://www.kaggle.com/learn/intro-to-sql">Intro to SQL micro-course</a>, you learned how to use <a href="https://www.kaggle.com/dansbecker/joining-data"><strong>INNER JOIN</strong></a> to consolidate information from two different tables.  Now you'll learn about a few more types of <strong>JOIN</strong>, along with how to use <strong>UNIONs</strong> to pull information from multiple tables.</p>
 <p>Along the way, we'll work with two imaginary tables, called <code>owners</code> and <code>pets</code>.</p>
-<p><img src="https://i.imgur.com/dYVwS4T.png" alt="two tables"></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/dYVwS4T.png" alt="two tables"></p>
 <p>Each row of the <code>owners</code> table identifies a different pet owner, where the <code>ID</code> column is a unique identifier.  The <code>Pet_ID</code> column (in the <code>owners</code> table) contains the ID for the pet that belongs to the owner (this number matches the ID for the pet from the <code>pets</code> table).</p>
 <p>For example,</p>
 <ul>
@@ -2876,16 +2877,16 @@ Licensed under the Apache License, Version 2.0.
 </ul>
 <p>Putting these two facts together, Dr. Harris Bonkers is owned by Aubrey Little.  Likewise, since Veronica Dunn does not have a corresponding <code>Pet_ID</code>, she does not have a pet.  And, since 5 does not appear in the <code>Pet_ID</code> column, Maisie does not have an owner.</p>
 <h2 id="joins">JOINs<a class="anchor-link" href="#joins">&#182;</a></h2><p>Recall that we can use an <strong>INNER JOIN</strong> to pull rows from both tables where the value in the <code>Pet_ID</code> column in the <code>owners</code> table has a match in the <code>ID</code> column of the <code>pets</code> table.</p>
-<p><img src="https://i.imgur.com/C5wimKT.png" alt="..."></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/C5wimKT.png" alt="..."></p>
 <p>In this case, Veronica Dunn and Maisie are not included in the results.  But what if we instead want to create a table containing all pets, regardless of whether they have owners?  Or, what if we want to combine all of the rows in both tables?  In these cases, we need only use a different type of <strong>JOIN</strong>.</p>
 <p>For instance, to create a table containing all rows from the <code>owners</code> table, we use a <strong>LEFT JOIN</strong>.  In this case, "left" refers to the table that appears before the <strong>JOIN</strong> in the query.  ("Right" refers to the table that is after the <strong>JOIN</strong>.)</p>
-<p><img src="https://i.imgur.com/tnOqw2S.png" alt="..."></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/tnOqw2S.png" alt="..."></p>
 <p>Replacing <strong>INNER JOIN</strong> in the query above with <strong>LEFT JOIN</strong> returns all rows where the two tables have matching entries, along with all of the rows in the left table (whether there is a match or not).</p>
 <p>If we instead use a <strong>RIGHT JOIN</strong>, we get the matching rows, along with all rows in the right table (whether there is a match or not).</p>
 <p>Finally, a <strong>FULL JOIN</strong> returns all rows from both tables.  Note that in general, any row that does not have a match in both tables will have NULL entries for the missing values.  You can see this in the image below.</p>
-<p><img src="https://i.imgur.com/1Dvmg8S.png" alt="..."></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/1Dvmg8S.png" alt="..."></p>
 <h2 id="unions">UNIONs<a class="anchor-link" href="#unions">&#182;</a></h2><p>As you've seen, <strong>JOINs</strong> horizontally combine results from different tables.  If you instead would like to vertically concatenate columns, you can do so with a <strong>UNION</strong>.  The example query below combines the <code>Age</code> columns from both tables.</p>
-<p><img src="https://i.imgur.com/oa6VDig.png" alt="..."></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/oa6VDig.png" alt="..."></p>
 <p>Note that with a <strong>UNION</strong>, the data types of both columns must be the same, but the column names can be different.  (So, for instance, we cannot take the <strong>UNION</strong> of the <code>Age</code> column from the <code>owners</code> table and the <code>Pet_Name</code> column from the <code>pets</code> table.)</p>
 <p>We use <strong>UNION ALL</strong> to include duplicate values - you'll notice that <code>9</code> appears in both the <code>owners</code> table and the <code>pets</code> table, and shows up twice in the concatenated results.  If you'd like to drop duplicate values, you need only change <strong>UNION ALL</strong> in the query to <strong>UNION DISTINCT</strong>.</p>
 <h2 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h2><p>We'll work with the <a href="https://www.kaggle.com/hacker-news/hacker-news">Hacker News</a> dataset. We begin by reviewing the first several rows of the <code>comments</code> table. (<em>The corresponding code is hidden, but you can un-hide it by clicking on the "Code" button below.</em>)</p>

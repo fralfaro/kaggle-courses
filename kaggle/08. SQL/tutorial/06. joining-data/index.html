@@ -2865,6 +2865,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/08.%20SQL/tutorial/06.%20joining-data.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="joining-data">Joining Data<a class="anchor-link" href="#joining-data">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>You have the tools to obtain data from a single table in whatever format you want it. But what if the data you want is spread across multiple tables?</p>
 <p>That's where <strong>JOIN</strong> comes in! <strong>JOIN</strong> is incredibly important in practical SQL workflows. So let's get started.</p>
 <h2 id="example">Example<a class="anchor-link" href="#example">&#182;</a></h2><p>We'll use our imaginary <code>pets</code> table, which has three columns:</p>
@@ -2879,9 +2880,9 @@ Licensed under the Apache License, Version 2.0.
 <li><code>Name</code> - name of the owner</li>
 <li><code>Pet_ID</code> - ID number for the pet that belongs to the owner (which matches the ID number for the pet in the <code>pets</code> table)</li>
 </ul>
-<p><img src="https://i.imgur.com/Rx6L4m1.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/Rx6L4m1.png" alt=""></p>
 <p>To get information that applies to a certain pet, we match the <code>ID</code> column in the <code>pets</code> table to the <code>Pet_ID</code> column in the <code>owners</code> table.</p>
-<p><img src="https://i.imgur.com/eXvIORm.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/eXvIORm.png" alt=""></p>
 <p>For example,</p>
 <ul>
 <li>the <code>pets</code> table shows that Dr. Harris Bonkers is the pet with ID 1. </li>
@@ -2890,7 +2891,7 @@ Licensed under the Apache License, Version 2.0.
 <p>Putting these two facts together, Dr. Harris Bonkers is owned by Aubrey Little.</p>
 <p>Fortunately, we don't have to do this by hand to figure out which owner goes with which pet. In the next section, you'll learn how to use <strong>JOIN</strong> to create a new table combining information from the <code>pets</code> and <code>owners</code> tables.</p>
 <h2 id="join">JOIN<a class="anchor-link" href="#join">&#182;</a></h2><p>Using <strong>JOIN</strong>, we can write a query to create a table with just two columns: the name of the pet and the name of the owner.</p>
-<p><img src="https://i.imgur.com/fLlng42.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/fLlng42.png" alt=""></p>
 <p>We combine information from both tables by matching rows where the <code>ID</code> column in the <code>pets</code> table matches the <code>Pet_ID</code> column in the <code>owners</code> table.</p>
 <p>In the query, <strong>ON</strong> determines which column in each table to use to combine the tables.  Notice that since the <code>ID</code> column exists in both tables, we have to clarify which one to use.  We use <code>p.ID</code> to refer to the <code>ID</code> column from the <code>pets</code> table, and <code>o.Pet_ID</code> refers to the <code>Pet_ID</code> column from the <code>owners</code> table.</p>
 <blockquote><p>In general, when you're joining tables, it's a good habit to specify which table each of your columns comes from. That way, you don't have to pull up the schema every time you go back to read the query.</p>
@@ -3359,7 +3360,7 @@ file_count_by_license = query_job.to_dataframe()</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>It's a big query, and so we'll investigate each piece separately.</p>
-<p><img src="https://i.imgur.com/QeufD01.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/QeufD01.png" alt=""></p>
 <p>We'll begin with the <strong>JOIN</strong> (highlighted in blue above).  This specifies the sources of data and how to join them. We use <strong>ON</strong> to specify that we combine the tables by matching the values in the <code>repo_name</code> columns in the tables.</p>
 <p>Next, we'll talk about <strong>SELECT</strong> and <strong>GROUP BY</strong> (highlighted in yellow).  The <strong>GROUP BY</strong> breaks the data into a different group for each license, before we <strong>COUNT</strong> the number of rows in the <code>sample_files</code> table that corresponds to each license.  (Remember that you can count the number of rows with <code>COUNT(1)</code>.)</p>
 <p>Finally, the <strong>ORDER BY</strong> (highlighted in purple) sorts the results so that licenses with more files appear first.</p>

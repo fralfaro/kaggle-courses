@@ -2823,24 +2823,25 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/08.%20SQL/tutorial/03.%20group-by-having-count.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="group-by-having-count">Group By, Having &amp; Count<a class="anchor-link" href="#group-by-having-count">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>Now that you can select raw data, you're ready to learn how to group your data and count things within those groups. This can help you answer questions like:</p>
 <ul>
 <li>How many of each kind of fruit has our store sold?</li>
 <li>How many species of animal has the vet office treated?</li>
 </ul>
 <p>To do this, you'll learn about three new techniques: <strong>GROUP BY</strong>, <strong>HAVING</strong> and <strong>COUNT()</strong>. Once again, we'll use this made-up table of information on pets.</p>
-<p><img src="https://i.imgur.com/fI5Pvvp.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/fI5Pvvp.png" alt=""></p>
 <h2 id="count">COUNT()<a class="anchor-link" href="#count">&#182;</a></h2><p><strong>COUNT()</strong>, as you may have guessed from the name, returns a count of things. If you pass it the name of a column, it will return the number of entries in that column.</p>
 <p>For instance, if we <strong>SELECT</strong> the <strong>COUNT()</strong> of the <code>ID</code> column in the <code>pets</code> table, it will return 4, because there are 4 ID's in the table.</p>
-<p><img src="https://i.imgur.com/Eu5HkXq.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/Eu5HkXq.png" alt=""></p>
 <p><strong>COUNT()</strong> is an example of an <strong>aggregate function</strong>, which takes many values and returns one. (Other examples of aggregate functions include <strong>SUM()</strong>, <strong>AVG()</strong>, <strong>MIN()</strong>, and <strong>MAX()</strong>.)  As you'll notice in the picture above, aggregate functions introduce strange column names (like <code>f0__</code>).  Later in this tutorial, you'll learn how to change the name to something more descriptive.</p>
 <h1 id="group-by">GROUP BY<a class="anchor-link" href="#group-by">&#182;</a></h1><p><strong>GROUP BY</strong> takes the name of one or more columns, and treats all rows with the same value in that column as a single group when you apply aggregate functions like <strong>COUNT()</strong>.</p>
 <p>For example, say we want to know how many of each type of animal we have in the <code>pets</code> table. We can use <strong>GROUP BY</strong> to group together rows that have the same value in the <code>Animal</code> column, while using <strong>COUNT()</strong> to find out how many ID's we have in each group.</p>
-<p><img src="https://i.imgur.com/tqE9Eh8.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/tqE9Eh8.png" alt=""></p>
 <p>It returns a table with three rows (one for each distinct animal).  We can see that the <code>pets</code> table contains 1 rabbit, 1 dog, and 2 cats.</p>
 <h2 id="group-by-having">GROUP BY ... HAVING<a class="anchor-link" href="#group-by-having">&#182;</a></h2><p><strong>HAVING</strong> is used in combination with <strong>GROUP BY</strong> to ignore groups that don't meet certain criteria.</p>
 <p>So this query, for example, will only include groups that have more than one ID in them.</p>
-<p><img src="https://i.imgur.com/2ImXfHQ.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/2ImXfHQ.png" alt=""></p>
 <p>Since only one group meets the specified criterion, the query will return a table with only one row.</p>
 <h2 id="example-which-hacker-news-comments-generated-the-most-discussion">Example: Which Hacker News comments generated the most discussion?<a class="anchor-link" href="#example-which-hacker-news-comments-generated-the-most-discussion">&#182;</a></h2><p>Ready to see an example on a real dataset? The Hacker News dataset contains information on stories and comments from the Hacker News social networking site.</p>
 <p>We'll work with the <code>comments</code> table and begin by printing the first few rows.  (<em>We have hidden the corresponding code. To take a peek, click on the "Code" button below.</em>)</p>

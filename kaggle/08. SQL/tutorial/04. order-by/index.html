@@ -2879,16 +2879,17 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/08.%20SQL/tutorial/04.%20order-by.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="order-by">Order By<a class="anchor-link" href="#order-by">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>So far, you've learned how to use several SQL clauses.  For instance, you know how to use <strong>SELECT</strong> to pull specific columns from a table, along with <strong>WHERE</strong> to pull rows that meet specified criteria.  You also know how to use aggregate functions like <strong>COUNT()</strong>, along with <strong>GROUP BY</strong> to treat multiple rows as a single group.</p>
 <p>Now you'll learn how to change the order of your results using the <strong>ORDER BY</strong> clause, and you'll explore a popular use case by applying ordering to dates.  To illustrate what you'll learn in this tutorial, we'll work with a slightly modified version of our familiar <code>pets</code> table.</p>
-<p><img src="https://i.imgur.com/b99zTLv.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/b99zTLv.png" alt=""></p>
 <h2 id="order-by">ORDER BY<a class="anchor-link" href="#order-by">&#182;</a></h2><p><strong>ORDER BY</strong> is usually the last clause in your query, and it sorts the results returned by the rest of your query.</p>
 <p>Notice that the rows are not ordered by the <code>ID</code> column.  We can quickly remedy this with the query below.</p>
-<p><img src="https://i.imgur.com/6o9LuTA.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/6o9LuTA.png" alt=""></p>
 <p>The <strong>ORDER BY</strong> clause also works for columns containing text, where the results show up in alphabetical order.</p>
-<p><img src="https://i.imgur.com/ooxuzw3.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/ooxuzw3.png" alt=""></p>
 <p>You can reverse the order using the <strong>DESC</strong> argument (short for 'descending').  The next query sorts the table by the <code>Animal</code> column, where the values that are last in alphabetic order are returned first.</p>
-<p><img src="https://i.imgur.com/IElLJrR.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/IElLJrR.png" alt=""></p>
 <h2 id="dates">Dates<a class="anchor-link" href="#dates">&#182;</a></h2><p>Next, we'll talk about dates, because they come up very frequently in real-world databases. There are two ways that dates can be stored in BigQuery: as a <strong>DATE</strong> or as a <strong>DATETIME</strong>.</p>
 <p>The <strong>DATE</strong> format has the year first, then the month, and then the day. It looks like this:</p>
 
@@ -2901,11 +2902,11 @@ Licensed under the Apache License, Version 2.0.
 <p>So <code>2019-01-10</code> is interpreted as January 10, 2019.</p>
 <p>The <strong>DATETIME</strong> format is like the date format ... but with time added at the end.</p>
 <h2 id="extract">EXTRACT<a class="anchor-link" href="#extract">&#182;</a></h2><p>Often you'll want to look at part of a date, like the year or the day. You can do this with <strong>EXTRACT</strong>.  We'll illustrate this with a slightly different table, called <code>pets_with_date</code>.</p>
-<p><img src="https://i.imgur.com/vhvHIh0.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/vhvHIh0.png" alt=""></p>
 <p>The query below returns two columns, where column <code>Day</code> contains the day corresponding to each entry the <code>Date</code> column from the <code>pets_with_date</code> table:</p>
-<p><img src="https://i.imgur.com/PhoWBO0.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/PhoWBO0.png" alt=""></p>
 <p>SQL is very smart about dates, and we can ask for information beyond just extracting part of the cell. For example, this query returns one column with just the week in the year (between 1 and 53) for each date in the <code>Date</code> column:</p>
-<p><img src="https://i.imgur.com/A5hqGxY.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/A5hqGxY.png" alt=""></p>
 <p>You can find all the functions you can use with dates in BigQuery in <a href="https://cloud.google.com/bigquery/docs/reference/legacy-sql#datetimefunctions">this documentation</a> under "Date and time functions".</p>
 
 </div>

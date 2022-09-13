@@ -2961,21 +2961,22 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/08.%20SQL/tutorial/02.%20select-from-where.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="select-from-where">Select, From &amp; Where<a class="anchor-link" href="#select-from-where">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>Now that you know how to access and examine a dataset, you're ready to write your first SQL query!  As you'll soon see, SQL queries will help you sort through a massive dataset, to retrieve only the information that you need.</p>
 <p>We'll begin by using the keywords <strong>SELECT</strong>, <strong>FROM</strong>, and <strong>WHERE</strong> to get data from specific columns based on conditions you specify.</p>
 <p>For clarity, we'll work with a small imaginary dataset <code>pet_records</code> which contains just one table, called <code>pets</code>.</p>
-<p><img src="https://i.imgur.com/fI5Pvvp.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/fI5Pvvp.png" alt=""></p>
 <h2 id="select-from">SELECT ... FROM<a class="anchor-link" href="#select-from">&#182;</a></h2><p>The most basic SQL query selects a single column from a single table.  To do this,</p>
 <ul>
 <li>specify the column you want after the word <strong>SELECT</strong>, and then </li>
 <li>specify the table after the word <strong>FROM</strong>.  </li>
 </ul>
 <p>For instance, to select the <code>Name</code> column (from the <code>pets</code> table in the <code>pet_records</code> database in the <code>bigquery-public-data</code> project), our query would appear as follows:</p>
-<p><img src="https://i.imgur.com/c3GxYRt.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/c3GxYRt.png" alt=""></p>
 <p>Note that when writing an SQL query, the argument we pass to <strong>FROM</strong> is <em>not</em> in single or double quotation marks (' or "). It is in backticks (`).</p>
 <h2 id="where">WHERE ...<a class="anchor-link" href="#where">&#182;</a></h2><p>BigQuery datasets are large, so you'll usually want to return only the rows meeting specific conditions. You can do this using the <strong>WHERE</strong> clause.</p>
 <p>The query below returns the entries from the <code>Name</code> column that are in rows where the <code>Animal</code> column has the text <code>'Cat'</code>.</p>
-<p><img src="https://i.imgur.com/HJOT8Kb.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/HJOT8Kb.png" alt=""></p>
 
 </div>
 </div>

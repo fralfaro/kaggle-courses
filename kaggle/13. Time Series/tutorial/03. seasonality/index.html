@@ -2931,16 +2931,17 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/13.%20Time%20Series/tutorial/03.%20seasonality.ipynb03.%20seasonality.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="seasonality">Seasonality<a class="anchor-link" href="#seasonality">&#182;</a></h1><h2 id="what-is-seasonality">What is Seasonality?<a class="anchor-link" href="#what-is-seasonality">&#182;</a></h2><p>We say that a time series exhibits <strong>seasonality</strong> whenever there is a regular, periodic change in the mean of the series. Seasonal changes generally follow the clock and calendar -- repetitions over a day, a week, or a year are common. Seasonality is often driven by the cycles of the natural world over days and years or by conventions of social behavior surrounding dates and times.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/ViYbSxS.png" width=800, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/ViYbSxS.png" width=800, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>Seasonal patterns in four time series.
 </center></figcaption>
 </figure><p>We will learn two kinds of features that model seasonality. The first kind, indicators, is best for a season with few observations, like a weekly season of daily observations. The second kind, Fourier features, is best for a season with many observations, like an annual season of daily observations.</p>
 <h2 id="seasonal-plots-and-seasonal-indicators">Seasonal Plots and Seasonal Indicators<a class="anchor-link" href="#seasonal-plots-and-seasonal-indicators">&#182;</a></h2><p>Just like we used a moving average plot to discover the trend in a series, we can use a <strong>seasonal plot</strong> to discover seasonal patterns.</p>
 <p>A seasonal plot shows segments of the time series plotted against some common period, the period being the "season" you want to observe. The figure shows a seasonal plot of the daily views of Wikipedia's article on <em>Trigonometry</em>: the article's daily views plotted over a common <em>weekly</em> period.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/bd7D4NJ.png" width=800, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/bd7D4NJ.png" width=800, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>There is a clear weekly seasonal pattern in this series, higher on weekdays and falling towards the weekend.
 </center></figcaption>
 </figure><h3 id="seasonal-indicators">Seasonal indicators<a class="anchor-link" href="#seasonal-indicators">&#182;</a></h3><p><strong>Seasonal indicators</strong> are binary features that represent seasonal differences in the level of a time series. Seasonal indicators are what you get if you treat a seasonal period as a categorical feature and apply one-hot encoding.</p>
@@ -3053,27 +3054,27 @@ Licensed under the Apache License, Version 2.0.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Adding seasonal indicators to the training data helps models distinguish means within a seasonal period:</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/hIlF5j5.png" width=800, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/hIlF5j5.png" width=800, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>Ordinary linear regression learns the mean values at each time in the season.</center></figcaption>
 </figure><p>The indicators act as On / Off switches. At any time, at most one of these indicators can have a value of <code>1</code> (<em>On</em>). Linear regression learns a baseline value <code>2379</code> for <code>Mon</code> and then adjusts by the value of whichever indicator is <em>On</em> for that day; the rest are <code>0</code> and vanish.</p>
 <h2 id="fourier-features-and-the-periodogram">Fourier Features and the Periodogram<a class="anchor-link" href="#fourier-features-and-the-periodogram">&#182;</a></h2><p>The kind of feature we discuss now are better suited for long seasons over many observations where indicators would be impractical. Instead of creating a feature for each date, Fourier features try to capture the overall shape of the seasonal curve with just a few features.</p>
 <p>Let's take a look at a plot for the annual season in <em>Trigonometry</em>. Notice the repetitions of various frequencies: a long up-and-down movement three times a year, short weekly movements 52 times a year, and perhaps others.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/NJcaEdI.png" width=800, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/NJcaEdI.png" width=800, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>Annual seasonality in the <em>Wiki Trigonometry</em> series.</center></figcaption>
 </figure><p>It is these frequencies within a season that we attempt to capture with Fourier features. The idea is to include in our training data periodic curves having the same frequencies as the season we are trying to model. The curves we use are those of the trigonometric functions sine and cosine.</p>
 <p><strong>Fourier features</strong> are pairs of sine and cosine curves, one pair for each potential frequency in the season starting with the longest. Fourier pairs modeling annual seasonality would have frequencies: once per year, twice per year, three times per year, and so on.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/bKOjdU7.png" width=600, alt="A top figure and a bottom figure, each showing a sine curve and a cosine curve. The curves in the top plot both have frequency of once per year, while the curves in the bottom plot both have a frequency of twice per year.">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/bKOjdU7.png" width=600, alt="A top figure and a bottom figure, each showing a sine curve and a cosine curve. The curves in the top plot both have frequency of once per year, while the curves in the bottom plot both have a frequency of twice per year.">
 <figcaption style="textalign: center; font-style: italic"><center>The first two Fourier pairs for annual seasonality. <strong>Top: </strong>Frequency of once per year. <strong>Bottom: </strong>Frequency of twice per year.</strong></center></figcaption>
 </figure><p>If we add a set of these sine / cosine curves to our training data, the linear regression algorithm will figure out the weights that will fit the seasonal component in the target series. The figure illustrates how linear regression used four Fourier pairs to model the annual seasonality in the <em>Wiki Trigonometry</em> series.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/mijPhko.png" width=600, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/mijPhko.png" width=600, alt="">
 <figcaption style="textalign: center; font-style: italic"><center><strong>Top: </strong>Curves for four Fourier pairs, a sum of sine and cosine with regression coefficients. Each curve models a different frequency. <strong>Bottom: </strong>The sum of these curves approximates the seasonal pattern.</center></figcaption>
 </figure><p>Notice that we only needed eight features (four sine / cosine pairs) to get a good estimate of the annual seasonality. Compare this to the seasonal indicator method which would have required hundreds of features (one for each day of the year). By modeling only the "main effect" of the seasonality with Fourier features, you'll usually need to add far fewer features to your training data, which means reduced computation time and less risk of overfitting.</p>
 <h3 id="choosing-fourier-features-with-the-periodogram">Choosing Fourier features with the Periodogram<a class="anchor-link" href="#choosing-fourier-features-with-the-periodogram">&#182;</a></h3><p>How many Fourier pairs should we actually include in our feature set? We can answer this question with the periodogram. The <strong>periodogram</strong> tells you the strength of the frequencies in a time series. Specifically, the value on the y-axis of the graph is <code>(a ** 2 + b ** 2) / 2</code>, where <code>a</code> and <code>b</code> are the coefficients of the sine and cosine at that frequency (as in the <em>Fourier Components</em> plot above).</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/PK6WEe3.png" width=600, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/PK6WEe3.png" width=600, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>Periodogram for the <em>Wiki Trigonometry</em> series.</center></figcaption>
 </figure><p>From left to right, the periodogram drops off after <em>Quarterly</em>, four times a year. That was why we chose four Fourier pairs to model the annual season. The <em>Weekly</em> frequency we ignore since it's better modeled with indicators.</p>
 <h3 id="computing-fourier-features-optional">Computing Fourier features (optional)<a class="anchor-link" href="#computing-fourier-features-optional">&#182;</a></h3><p>Knowing how Fourier features are computed isn't essential to using them, but if seeing the details would clarify things, the cell hidden cell below illustrates how a set of Fourier features could be derived from the index of a time series. (We'll use a library function from <code>statsmodels</code> for our applications, however.)</p>

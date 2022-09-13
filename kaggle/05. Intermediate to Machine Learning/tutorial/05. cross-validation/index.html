@@ -2823,6 +2823,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/05.%20cross-validation.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="cross-validation">Cross-Validation<a class="anchor-link" href="#cross-validation">&#182;</a></h1><p>In this tutorial, you will learn how to use <strong>cross-validation</strong> for better measures of model performance.</p>
 <h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>Machine learning is an iterative process.</p>
 <p>You will face choices about what predictive variables to use, what types of models to use, what arguments to supply to those models, etc. So far, you have made these choices in a data-driven way by measuring model quality with a validation (or holdout) set.</p>
@@ -2842,7 +2843,7 @@ Licensed under the Apache License, Version 2.0.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="what-is-cross-validation">What is cross-validation?<a class="anchor-link" href="#what-is-cross-validation">&#182;</a></h2><p>In <strong>cross-validation</strong>, we run our modeling process on different subsets of the data to get multiple measures of model quality.</p>
 <p>For example, we could begin by dividing the data into 5 pieces, each 20% of the full dataset.  In this case, we say that we have broken the data into 5 "<strong>folds</strong>".</p>
-<p><img src="https://i.imgur.com/9k60cVA.png" alt="tut5_crossval"></p>
+<p><img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/9k60cVA.png" alt="tut5_crossval"></p>
 <p>Then, we run one experiment for each fold:</p>
 <ul>
 <li>In <strong>Experiment 1</strong>, we use the first fold as a validation (or holdout) set and everything else as training data. This gives us a measure of model quality based on a 20% holdout set.  </li>

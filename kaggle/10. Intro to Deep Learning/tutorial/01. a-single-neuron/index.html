@@ -2837,6 +2837,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/01.%20a-single-neuron.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="a-single-neuron">A Single Neuron<a class="anchor-link" href="#a-single-neuron">&#182;</a></h1><h2 id="welcome-to-deep-learning">Welcome to Deep Learning!<a class="anchor-link" href="#welcome-to-deep-learning">&#182;</a></h2><p>Welcome to Kaggle's <em>Introduction to Deep Learning</em> course! You're about to learn all you need to get started building your own deep neural networks. Using Keras and Tensorflow you'll learn how to:</p>
 <ul>
 <li>create a <strong>fully-connected</strong> neural network architecture</li>
@@ -2851,7 +2852,7 @@ Licensed under the Apache License, Version 2.0.
 <p>Through their power and scalability <strong>neural networks</strong> have become the defining model of deep learning.  Neural networks are composed of neurons, where each neuron individually performs only a simple computation. The power of a neural network comes instead from the complexity of the connections these neurons can form.</p>
 <h2 id="the-linear-unit">The Linear Unit<a class="anchor-link" href="#the-linear-unit">&#182;</a></h2><p>So let's begin with the fundamental component of a neural network: the individual neuron. As a diagram, a <strong>neuron</strong> (or <strong>unit</strong>) with one input looks like:</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/mfOlDR6.png" width="250" alt="Diagram of a linear unit.">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/mfOlDR6.png" width="250" alt="Diagram of a linear unit.">
 <figcaption style="textalign: center; font-style: italic"><center>The Linear Unit: $y = w x + b$
 </center></figcaption>
 </figure><p>The input is <code>x</code>. Its connection to the neuron has a <strong>weight</strong> which is <code>w</code>. Whenever a value flows through a connection, you multiply the value by the connection's weight. For the input <code>x</code>, what reaches the neuron is <code>w * x</code>. A neural network "learns" by modifying its weights.</p>
@@ -2874,13 +2875,13 @@ It's an equation of a line! It's the slope-intercept equation, where $w$ is the 
 <h1 id="example-the-linear-unit-as-a-model">Example - The Linear Unit as a Model<a class="anchor-link" href="#example-the-linear-unit-as-a-model">&#182;</a></h1><p>Though individual neurons will usually only function as part of a larger network, it's often useful to start with a single neuron model as a baseline. Single neuron models are <em>linear</em> models.</p>
 <p>Let's think about how this might work on a dataset like <a href="https://www.kaggle.com/crawford/80-cereals">80 Cereals</a>. Training a model with <code>'sugars'</code> (grams of sugars per serving) as input and <code>'calories'</code> (calories per serving) as output, we might find the bias is <code>b=90</code> and the weight is <code>w=2.5</code>. We could estimate the calorie content of a cereal with 5 grams of sugar per serving like this:</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/yjsfFvY.png" width="1000" alt="Computing with the linear unit.">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/yjsfFvY.png" width="1000" alt="Computing with the linear unit.">
 <figcaption style="textalign: center; font-style: italic"><center>Computing with the linear unit.
 </center></figcaption>
 </figure><p>And, checking against our formula, we have $calories = 2.5 \times 5 + 90 = 102.5$, just like we expect.</p>
 <h2 id="multiple-inputs">Multiple Inputs<a class="anchor-link" href="#multiple-inputs">&#182;</a></h2><p>The <em>80 Cereals</em> dataset has many more features than just <code>'sugars'</code>. What if we wanted to expand our model to include things like fiber or protein content? That's easy enough. We can just add more input connections to the neuron, one for each additional feature. To find the output, we would multiply each input to its connection weight and then add them all together.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/vyXSnlZ.png" width="300" alt="Three input connections: x0, x1, and x2, along with the bias.">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/vyXSnlZ.png" width="300" alt="Three input connections: x0, x1, and x2, along with the bias.">
 <figcaption style="textalign: center; font-style: italic"><center>A linear unit with three inputs.
 </center></figcaption>
 </figure><p>The formula for this neuron would be $y = w_0 x_0 + w_1 x_1 + w_2 x_2 + b$. A linear unit with two inputs will fit a plane, and a unit with more inputs than that will fit a hyperplane.</p>

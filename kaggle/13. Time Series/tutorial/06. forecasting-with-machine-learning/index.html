@@ -2987,6 +2987,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://kaggle.com/kernels/welcome?src=https://github.com/fralfaro/kaggle-courses/blob/main/docs/kaggle/13.%20Time%20Series/tutorial/06.%20forecasting-with-machine-learning.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Kaggle"></a></p>
 <h1 id="forecasting-with-machine-learning">Forecasting With Machine Learning<a class="anchor-link" href="#forecasting-with-machine-learning">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>In Lessons 2 and 3, we treated forecasting as a simple regression problem with all of our features derived from a single input, the time index. We could easily create forecasts for any time in the future by just generating our desired trend and seasonal features.</p>
 <p>When we added lag features in Lesson 4, however, the nature of the problem changed. Lag features require that the lagged target value is known at the time being forecast. A lag 1 feature shifts the time series forward 1 step, which means you could forecast 1 step into the future but not 2 steps.</p>
 <p>In Lesson 4, we just assumed that we could always generate lags up to the period we wanted to forecast (every prediction was for just one step forward, in other words). Real-world forecasting typically demands more than this, so in this lesson we'll learn how to make forecasts for a variety of situations.</p>
@@ -2998,7 +2999,7 @@ Licensed under the Apache License, Version 2.0.
 <p>The <strong>forecast origin</strong> is time at which you are making a forecast. Practically, you might consider the forecast origin to be the last time for which you have training data for the time being predicted. Everything up to he origin can be used to create features.</p>
 <p>The <strong>forecast horizon</strong> is the time for which you are making a forecast. We often describe a forecast by the number of time steps in its horizon: a "1-step" forecast or "5-step" forecast, say. The forecast horizon describes the target.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/xwEgcOk.png" width=500, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/xwEgcOk.png" width=500, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>A three-step forecast horizon with a two-step lead time, using four lag features. The figure represents what would be a single row of training data -- data for a single prediction, in other words.
 </center></figcaption>
 </figure><p>The time between the origin and the horizon is the <strong>lead time</strong> (or sometimes <em>latency</em>) of the forecast. A forecast's lead time is described by the number of steps from origin to horizon: a "1-step ahead" or "3-step ahead" forecast, say. In practice, it may be necessary for a forecast to begin multiple steps ahead of the origin because of delays in data acquisition or processing.</p>
@@ -3286,22 +3287,22 @@ data.head(10).style.set_properties(['Targets'], **{'background-color': 'Lavender
 <h2 id="multistep-forecasting-strategies">Multistep Forecasting Strategies<a class="anchor-link" href="#multistep-forecasting-strategies">&#182;</a></h2><p>There are a number of strategies for producing the multiple target steps required for a forecast. We'll outline four common strategies, each with strengths and weaknesses.</p>
 <h3 id="multioutput-model">Multioutput model<a class="anchor-link" href="#multioutput-model">&#182;</a></h3><p>Use a model that produces multiple outputs naturally. Linear regression and neural networks can both produce multiple outputs. This strategy is simple and efficient, but not possible for every algorithm you might want to use. XGBoost can't do this, for instance.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/uFsHiqr.png" width=300, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/uFsHiqr.png" width=300, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>
 </center></figcaption>
 </figure><h3 id="direct-strategy">Direct strategy<a class="anchor-link" href="#direct-strategy">&#182;</a></h3><p>Train a separate model for each step in the horizon: one model forecasts 1-step ahead, another 2-steps ahead, and so on. Forecasting 1-step ahead is a different problem than 2-steps ahead (and so on), so it can help to have a different model make forecasts for each step. The downside is that training lots of models can be computationally expensive.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/HkolNMV.png" width=900, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/HkolNMV.png" width=900, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>
 </center></figcaption>
 </figure><h3 id="recursive-strategy">Recursive strategy<a class="anchor-link" href="#recursive-strategy">&#182;</a></h3><p>Train a single one-step model and use its forecasts to update the lag features for the next step. With the recursive method, we feed a model's 1-step forecast back in to that same model to use as a lag feature for the next forecasting step. We only need to train one model, but since errors will propagate from step to step, forecasts can be inaccurate for long horizons.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/sqkSFDn.png" width=300, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/sqkSFDn.png" width=300, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>
 </center></figcaption>
 </figure><h3 id="dirrec-strategy">DirRec strategy<a class="anchor-link" href="#dirrec-strategy">&#182;</a></h3><p>A combination of the direct and recursive strategies: train a model for each step and use forecasts from previous steps as <em>new</em> lag features. Step by step, each model gets an additional lag input. Since each model always has an up-to-date set of lag features, the DirRec strategy can capture serial dependence better than Direct, but it can also suffer from error propagation like Recursive.</p>
 <figure style="padding: 1em;">
-<img src="https://i.imgur.com/B7KAvAO.png" width=900, alt="">
+<img src="https://raw.githubusercontent.com/fralfaro/kaggle-courses/main/docs/kaggle/images/B7KAvAO.png" width=900, alt="">
 <figcaption style="textalign: center; font-style: italic"><center>
 </center></figcaption>
 </figure><h2 id="example-flu-trends">Example - Flu Trends<a class="anchor-link" href="#example-flu-trends">&#182;</a></h2><p>In this example we'll apply the MultiOutput and Direct strategies to the <em>Flu Trends</em> data from Lesson 4, this time making true forecasts for multiple weeks beyond the training period.</p>
