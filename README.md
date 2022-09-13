@@ -9,4 +9,5 @@ We pare down complex topics to their key practical components, so you gain usabl
 
 The courses are provided at **no cost to you**, and you can now [earn certificates](https://www.kaggle.com/learn-course-certificates).
 
-> **Note**: this repository is an alternative to the official [Kaggle Courses](https://www.kaggle.com/learn).
+> **Note**: this repository is an alternative to the official [Kaggle Courses](https://www.kaggle.com/learn). 
+> The cover of the book was made by me. I used content from this [repository](https://github.com/thunderstroke325/kaggle-courses).
