@@ -9,4 +9,4 @@ We pare down complex topics to their key practical components, so you gain usabl
 
 The courses are provided at **no cost to you**, and you can now [earn certificates](https://www.kaggle.com/learn-course-certificates).
 
-> **Note**: This new documentation was developed by [fralfaro](https://github.com/fralfaro). You can find the repository at the following link: [fralfaro/kaggle-courses](https://github.com/fralfaro/kaggle-courses).
+> **Note**: This new documentation was developed by [fralfaro](https://github.com/fralfaro). You can find the repository at the following link: [fralfaro/book_kaggle_courses](https://github.com/fralfaro/book_kaggle_courses).
