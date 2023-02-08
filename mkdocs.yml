@@ -2,14 +2,14 @@
 
 # Project information
 site_name: Kaggle Courses
-site_url: https://github.com/fralfaro/book_kaggle_courses
+site_url: https://github.com/fralfaro/kaggle-courses
 
 site_author: Francisco Alfaro
 site_description:
 
 # Repository
-repo_name: fralfaro/book_kaggle_courses
-repo_url: https://github.com/fralfaro/book_kaggle_courses
+repo_name: fralfaro/kaggle-courses
+repo_url: https://github.com/fralfaro/kaggle-courses
 edit_uri: ''
 
 
