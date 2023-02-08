@@ -1,382 +1,382 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/__init__/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/__init__/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/01.%20Intro%20to%20Programming/tutorial/01.%20arithmetic-and-variables/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/01.%20arithmetic-and-variables/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/01.%20Intro%20to%20Programming/tutorial/02.%20functions/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/02.%20functions/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/01.%20Intro%20to%20Programming/tutorial/03.%20data-types/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/03.%20data-types/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/01.%20Intro%20to%20Programming/tutorial/04.%20conditions-and-conditional-statements/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/04.%20conditions-and-conditional-statements/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/01.%20Intro%20to%20Programming/tutorial/05.%20intro-to-lists/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/01.%20Intro%20to%20Programming/tutorial/05.%20intro-to-lists/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/01.%20hello-python/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/01.%20hello-python/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/02.%20functions-and-getting-help/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/02.%20functions-and-getting-help/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/03.%20booleans-and-conditionals/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/03.%20booleans-and-conditionals/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/04.%20lists/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/04.%20lists/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/05.%20loops-and-list-comprehensions/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/05.%20loops-and-list-comprehensions/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/06.%20strings-and-dictionaries/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/06.%20strings-and-dictionaries/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/02.%20Python/tutorial/07.%20working-with-external-libraries/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/02.%20Python/tutorial/07.%20working-with-external-libraries/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/01.%20how-models-work/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/01.%20how-models-work/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/02.%20basic-data-exploration/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/02.%20basic-data-exploration/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/03.%20your-first-machine-learning-model/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/03.%20your-first-machine-learning-model/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/04.%20model-validation/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/04.%20model-validation/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/05.%20underfitting-and-overfitting/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/05.%20underfitting-and-overfitting/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/06.%20random-forests/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/06.%20random-forests/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/07.%20machine-learning-competitions/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/03.%20Intro%20to%20Machine%20Learning/tutorial/07.%20machine-learning-competitions/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/04.%20Pandas/tutorial/01.%20creating-reading-and-writing/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/04.%20Pandas/tutorial/01.%20creating-reading-and-writing/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/04.%20Pandas/tutorial/02.%20indexing-selecting-assigning/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/04.%20Pandas/tutorial/02.%20indexing-selecting-assigning/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/04.%20Pandas/tutorial/03.%20summary-functions-and-maps/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/04.%20Pandas/tutorial/03.%20summary-functions-and-maps/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/04.%20Pandas/tutorial/04.%20grouping-and-sorting/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/04.%20Pandas/tutorial/04.%20grouping-and-sorting/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/04.%20Pandas/tutorial/05.%20data-types-and-missing-values/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/04.%20Pandas/tutorial/05.%20data-types-and-missing-values/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/04.%20Pandas/tutorial/06.%20renaming-and-combining/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/04.%20Pandas/tutorial/06.%20renaming-and-combining/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/01.%20introduction/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/01.%20introduction/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/02.%20missing-values/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/02.%20missing-values/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/03.%20categorical-variables/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/03.%20categorical-variables/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/04.%20pipelines/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/04.%20pipelines/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/05.%20cross-validation/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/05.%20cross-validation/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/06.%20xgboost/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/06.%20xgboost/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/07.%20data-leakage/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/05.%20Intermediate%20to%20Machine%20Learning/tutorial/07.%20data-leakage/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/01.%20hello-seaborn/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/01.%20hello-seaborn/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/02.%20line-charts/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/02.%20line-charts/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/03.%20bar-charts-and-heatmaps/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/03.%20bar-charts-and-heatmaps/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/04.%20scatter-plots/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/04.%20scatter-plots/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/05.%20distributions/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/05.%20distributions/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/06.%20choosing-plot-types-and-custom-styles/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/06.%20choosing-plot-types-and-custom-styles/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/07.%20final-project/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/07.%20final-project/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/06.%20Data%20Visualization/tutorial/08.%20creating-your-own-notebooks/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/06.%20Data%20Visualization/tutorial/08.%20creating-your-own-notebooks/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/01.%20what-is-feature-engineering/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/01.%20what-is-feature-engineering/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/02.%20mutual-information/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/02.%20mutual-information/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/03.%20creating-features/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/03.%20creating-features/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/04.%20clustering-with-k-means/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/04.%20clustering-with-k-means/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/05.%20principal-component-analysis/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/05.%20principal-component-analysis/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/06.%20target-encoding/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/06.%20target-encoding/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/07.%20Feature%20Engineering/tutorial/07.%20feature-engineering-for-house-prices/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/07.%20Feature%20Engineering/tutorial/07.%20feature-engineering-for-house-prices/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/08.%20SQL/tutorial/01.%20getting-started-with-sql-and-bigquery/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/08.%20SQL/tutorial/01.%20getting-started-with-sql-and-bigquery/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/08.%20SQL/tutorial/02.%20select-from-where/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/08.%20SQL/tutorial/02.%20select-from-where/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/08.%20SQL/tutorial/03.%20group-by-having-count/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/08.%20SQL/tutorial/03.%20group-by-having-count/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/08.%20SQL/tutorial/04.%20order-by/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/08.%20SQL/tutorial/04.%20order-by/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/08.%20SQL/tutorial/05.%20as-with/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/08.%20SQL/tutorial/05.%20as-with/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/08.%20SQL/tutorial/06.%20joining-data/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/08.%20SQL/tutorial/06.%20joining-data/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/09.%20Advanced%20SQL/tutorial/01.%20joins-and-unions/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/09.%20Advanced%20SQL/tutorial/01.%20joins-and-unions/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/09.%20Advanced%20SQL/tutorial/02.%20analytic-functions/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/09.%20Advanced%20SQL/tutorial/02.%20analytic-functions/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/09.%20Advanced%20SQL/tutorial/03.%20nested-and-repeated-data/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/09.%20Advanced%20SQL/tutorial/03.%20nested-and-repeated-data/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/09.%20Advanced%20SQL/tutorial/04.%20writing-efficient-queries/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/09.%20Advanced%20SQL/tutorial/04.%20writing-efficient-queries/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/01.%20a-single-neuron/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/01.%20a-single-neuron/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/02.%20deep-neural-networks/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/02.%20deep-neural-networks/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/03.%20stochastic-gradient-descent/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/03.%20stochastic-gradient-descent/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/04.%20overfitting-and-underfitting/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/04.%20overfitting-and-underfitting/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/05.%20dropout-and-batch-normalization/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/05.%20dropout-and-batch-normalization/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/06.%20binary-classification/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/10.%20Intro%20to%20Deep%20Learning/tutorial/06.%20binary-classification/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/12.%20Data%20Cleaning/tutorial/01.%20handling-missing-values/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/12.%20Data%20Cleaning/tutorial/01.%20handling-missing-values/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/12.%20Data%20Cleaning/tutorial/02.%20scaling-and-normalization/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/12.%20Data%20Cleaning/tutorial/02.%20scaling-and-normalization/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/12.%20Data%20Cleaning/tutorial/03.%20parsing-dates/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/12.%20Data%20Cleaning/tutorial/03.%20parsing-dates/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/12.%20Data%20Cleaning/tutorial/04.%20character-encodings/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/12.%20Data%20Cleaning/tutorial/04.%20character-encodings/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/12.%20Data%20Cleaning/tutorial/05.%20inconsistent-data-entry/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/12.%20Data%20Cleaning/tutorial/05.%20inconsistent-data-entry/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/13.%20Time%20Series/tutorial/01.%20linear-regression-with-time-series/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/13.%20Time%20Series/tutorial/01.%20linear-regression-with-time-series/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/13.%20Time%20Series/tutorial/02.%20trend/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/13.%20Time%20Series/tutorial/02.%20trend/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/13.%20Time%20Series/tutorial/03.%20seasonality/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/13.%20Time%20Series/tutorial/03.%20seasonality/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/13.%20Time%20Series/tutorial/04.%20time-series-as-features/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/13.%20Time%20Series/tutorial/04.%20time-series-as-features/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/13.%20Time%20Series/tutorial/05.%20hybrid-models/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/13.%20Time%20Series/tutorial/05.%20hybrid-models/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/fralfaro/book_kaggle_courses/kaggle/13.%20Time%20Series/tutorial/06.%20forecasting-with-machine-learning/</loc>
+         <loc>https://github.com/fralfaro/kaggle-courses/kaggle/13.%20Time%20Series/tutorial/06.%20forecasting-with-machine-learning/</loc>
          <lastmod>2023-02-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
