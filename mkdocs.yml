@@ -39,7 +39,7 @@ theme:
   name: material
   language: en
   logo: images/logo.bmp
-  favicon: images/logo_python.svg
+  favicon: images/kaggle.png
   features:
     - navigation.instant
     - navigation.top
